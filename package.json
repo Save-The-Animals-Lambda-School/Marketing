@@ -1,0 +1,20 @@
+{
+  "name": "marketing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.14.6",
+    "yarn": "^1.21.1"
+  }
+}
