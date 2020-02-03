@@ -59,6 +59,11 @@ a:hover,
 a:focus {
 	color: @green;
 }
+ul li {
+	font-size: 1.5rem;
+	list-style-type: square;
+	margin: 0 0 15px 25px;
+}
 
 // Navigation
 
@@ -84,12 +89,12 @@ nav a:focus {
 header {
 	display: block;
 	background-color: @main-bg;
-	background-image: url('/img/maurits-bausenhart-Ay67yB6vmF8-unsplash.jpg');
+	background-image: url('/img/elephant-bg.jpg');
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh;
-	max-height: 350px;
+	max-height: 300px;
 	width: 100%;
 }
 header h1,
@@ -98,11 +103,15 @@ header h2 {
 	margin: 5% auto 5% auto;
 	padding: 15px;
 }
+#organizer h3 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
 #content-container {
 }
 .container {
 	width: 80%;
-	padding: 3%;
+	padding: 5%;
 }
 #intro {
 	display: block;
@@ -115,12 +124,11 @@ header h2 {
 	color: @purple;
 	margin: 0 auto;
 	width: 100%;
-	padding: 5% 10%;
+	padding: 10% 15%;
 }
 #organizer {
 	background: @orange;
 	width: 80%;
-	padding: 3%;
 	margin: 0 auto;
 }
 #footer {
