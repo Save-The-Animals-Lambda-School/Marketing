@@ -133,12 +133,12 @@ html {
   font-size: 62.5%;
 }
 body {
-  color: #f4f7be;
+  color: #fcfafa;
   background: #223843;
 }
 html,
 body {
-  font-family: 'Forque', Ariel, Helvetica, Sans-serif;
+  font-family: 'ABeeZee', Ariel, Helvetica, Sans-serif;
 }
 p {
   font-size: 1.5rem;
@@ -155,23 +155,25 @@ h5 {
 h1 {
   font-size: 4rem;
   text-transform: uppercase;
+  letter-spacing: 0.45rem;
 }
 h2 {
   font-size: 2.5rem;
   padding-bottom: 10px;
   text-transform: capitalize;
+  letter-spacing: 0.35rem;
 }
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
 a {
-  color: #f26f39;
+  color: #d0e17b;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d0e17b;
+  color: #542344;
 }
 ul li {
   font-size: 1.5rem;
@@ -186,18 +188,18 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
-  max-height: 300px;
+  max-height: 325px;
   width: 100%;
 }
 header h1,
 header h2 {
   text-align: center;
-  margin: 5% auto 5% auto;
+  margin: 5% auto 3% auto;
   padding: 15px;
 }
 #organizer h3 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .container {
   width: 80%;
@@ -213,12 +215,12 @@ nav {
 nav a,
 nav a:visited {
   font-size: 2rem;
-  color: #d0e17b;
+  color: #fcfafa;
   padding: 0 10px 0 10px;
 }
 nav a:hover,
 nav a:focus {
-  color: #f26f39;
+  color: #d0e17b;
 }
 #footer {
   background: #542344;
@@ -229,10 +231,10 @@ nav a:focus {
   display: block;
   margin: -10% auto 0 auto;
   background: #f26f39;
-  color: #f4f7be;
+  color: #fcfafa;
 }
 #supporter {
-  background: #f4f7be;
+  background: #fcfafa;
   color: #542344;
   margin: 0 auto;
   width: 100%;
@@ -242,4 +244,8 @@ nav a:focus {
   background: #f26f39;
   width: 80%;
   margin: 0 auto;
+}
+#organizer h3 {
+  letter-spacing: 0.35rem;
+  text-align: center;
 }
