@@ -1,22 +1,589 @@
-header .logo-container {
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #1C1118;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Anton", sans-serif;
+}
+h1 {
+  font-size: 4.4rem;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h3 {
+  font-size: 3.6rem;
+}
+h4 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+.container h3 {
+  color: #7fff00;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 1.5rem;
+}
+.bottom-section {
+  max-width: 950px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    padding: 0 10px;
+  }
+}
+.bottom-section img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2%;
+  border-radius: 5%;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bottom-section .down {
+  align-self: center;
+  width: 50%;
+  margin: 0 15px;
+}
+@media (max-width: 500px) {
+  .bottom-section .down {
+    margin: 15px;
+    width: 100%;
+  }
+}
+.bottom-section h3 {
+  letter-spacing: 3px;
+  padding: 4% 0;
+  color: #ff4500;
+}
+@media (max-width: 500px) {
+  .bottom-section h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.bottom-section p {
+  text-align: justify;
+  font-size: 2rem;
+  font-size: 1.5rem;
+}
+#triptych {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  #triptych {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+  }
+}
+#triptych div {
+  text-align: center;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  #triptych div {
+    width: 100%;
+    align-items: center;
+  }
+}
+#triptych div h4 {
+  letter-spacing: 3px;
+  padding: 4% 0;
+  color: #ff4500;
+}
+@media (max-width: 500px) {
+  #triptych div h4 {
+    font-size: 2rem;
+  }
+}
+#triptych div p {
+  text-align: justify;
+  font-size: 2rem;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px 20px 20px 40px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav h1 {
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+nav a.logo-link {
+  color: #1C1118;
+  text-decoration: none;
+}
+nav .links {
+  width: 32.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .buttons-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav .buttons-container .btn {
+  background: #7fff00;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 3.6rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 1rem;
+}
+nav .buttons-container .btn:hover {
+  background-color: transparent;
+  color: #00ffff;
+  border: 0.3rem solid #00ffff;
+}
+nav .buttons-container a {
+  text-decoration: none;
+}
+.links a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cc3333;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  padding: 40px 20px 20px 40px;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../image/puppy.jpg");
+  height: 50vh;
+  width: 45vw;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (max-width: 500px) {
+  header .hero {
+    height: 30vh;
+    width: 100vw;
+  }
+}
+header .hero.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../image/cuddle.jpg");
+  background-position: center;
+}
+header .hero-content {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+@media (max-width: 500px) {
+  header .hero-content {
+    width: 75%;
+  }
+}
+header .hero-content h2 {
+  font-size: 5.4rem;
+  line-height: 1.25;
+  margin-bottom: 2.8rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.4rem #1C1118;
+}
+@media (max-width: 500px) {
+  header .hero-content h2 {
+    font-size: 3.4rem;
+  }
+}
+header .hero-content .btn {
+  background: #7fff00;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ffff;
+}
+header .hero-content .btn:hover {
+  background-color: transparent;
+  color: #00ffff;
+  border: 0.3rem solid #00ffff;
+}
+@media (max-width: 500px) {
+  header .hero-content .btn {
+    font-size: 1.8rem;
+    width: 14rem;
+    height: 3.8rem;
+  }
+}
+header .hero-content .btn:hover {
+  background-color: #7fff00;
+  color: white;
+  border-color: #7fff00;
+}
+header .hero-content.team {
+  text-align: center;
+}
+header .news-container {
   width: 50vw;
   height: 50vh;
+  padding: 40px 20px 20px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .logo-container .logo-desktop {
-  max-width: 100%;
-  max-height: 50vh;
+header .news-container h4 {
+  letter-spacing: 3px;
+  padding: 4% 0;
+  color: #ff4500;
 }
-.cat-container img {
-  width: 50vw;
-  height: 50vh;
+@media (max-width: 500px) {
+  header .news-container h4 {
+    font-size: 2rem;
+  }
+}
+header .news-container ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 20px 8px 10px 15px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+@media (max-width: 500px) {
+  header .news-container ul li {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+}
+header .news-container ul li :hover {
+  background: grey;
+}
+@media (max-width: 500px) {
+  header .news-container {
+    width: 100vw;
+    height: 35vh;
+    padding: 0 50px;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+}
+footer {
+  color: #D6D6D5;
+  background: #cc3333;
+  padding: 2rem 0;
+}
+footer .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
 }
-.cat-container img {
-  max-width: 100%;
-  max-height: 50vh;
+@media (max-width: 500px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .column {
+  width: 30%;
+}
+footer .column .icon {
+  font-size: 3.4rem;
+  color: #D6D6D5;
+}
+@media (max-width: 500px) {
+  footer .column {
+    text-align: center;
+  }
+}
+footer h1 {
+  font-family: 'Forque', 'Anton', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  footer h1 {
+    text-align: center;
+  }
+}
+footer .links a {
+  color: #D6D6D5;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+}
+footer p {
+  font-size: 1.6rem;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  footer p {
+    text-align: center;
+  }
+}
+footer a.credits {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  footer a.credits {
+    margin-bottom: 1rem;
+  }
+}
+.how-it-works h3 {
+  color: #cc3333;
+}
+.meet-the-team h3 {
+  color: #cc3333;
+  text-align: center;
+  padding-top: 3rem;
+  line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .meet-the-team h3 {
+    padding-top: 0;
+  }
+}
+.meet-the-team .row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid #ff4500;
+  padding: 2.5rem 3rem;
+}
+.meet-the-team .row strong {
+  font-weight: bold;
+}
+.meet-the-team .avatar {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.meet-the-team .profile {
+  margin-left: 1rem;
 }
