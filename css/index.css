@@ -196,10 +196,7 @@ header h2 {
   text-align: center;
   margin: 5% auto 3% auto;
   padding: 15px;
-}
-#organizer h3 {
-  font-size: 2rem;
-  margin-bottom: 25px;
+  background-color: transparent;
 }
 .container {
   width: 80%;
@@ -236,16 +233,38 @@ nav a:focus {
 #supporter {
   background: #fcfafa;
   color: #542344;
-  margin: 0 auto;
+  margin: 25px auto 0 auto;
   width: 100%;
   padding: 10% 15%;
+}
+#supporter button {
+  border: 2px solid #f26f39;
+}
+#organizer h3,
+#supporter h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.3rem;
+  text-align: center;
 }
 #organizer {
   background: #f26f39;
   width: 80%;
-  margin: 0 auto;
+  margin: 25px auto 25px auto;
+  padding-top: 50px;
 }
-#organizer h3 {
-  letter-spacing: 0.35rem;
-  text-align: center;
+button {
+  width: 50%;
+  background: #542344;
+  color: #fcfafa;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #d0e17b;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+button:hover {
+  background: #223843;
 }
