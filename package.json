@@ -1,24 +1,24 @@
 {
-  "name": "marketing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Save-The-Animals-Lambda-School/Marketing.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Save-The-Animals-Lambda-School/Marketing/issues"
-  },
-  "homepage": "https://github.com/Save-The-Animals-Lambda-School/Marketing#readme",
-  "dependencies": {
-    "less": "^3.10.3",
-    "less-watch-compiler": "^1.14.6",
-    "yarn": "^1.22.0"
-  }
+	"name": "marketing",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Save-The-Animals-Lambda-School/Marketing.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Save-The-Animals-Lambda-School/Marketing/issues"
+	},
+	"homepage": "https://github.com/Save-The-Animals-Lambda-School/Marketing#readme",
+	"dependencies": {
+		"less": "^3.10.3",
+		"less-watch-compiler": "^1.14.6",
+		"yarn": "^1.22.0"
+	}
 }
