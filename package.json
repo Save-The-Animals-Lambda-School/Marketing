@@ -1,21 +1,16 @@
 {
-  "name": "save-the-animals",
+  "name": "marketing",
   "version": "1.0.0",
-  "description": "'Build week Unit 1. Marketing page for the Save the Animals initiative\"",
-  "main": "index.html",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
-  "repository": "https://github.com/Save-The-Animals-Lambda-School/Marketing/tree/amber-chunn",
-  "author": "Amber Chunn <a.77@me.com>",
-=======
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Save-The-Animals-Lambda-School/Marketing.git"
   },
   "author": "",
->>>>>>> b6e7d1608d176761a3cff5664918a763473603ec
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Save-The-Animals-Lambda-School/Marketing/issues"
