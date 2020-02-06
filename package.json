@@ -4,27 +4,26 @@
   "description": "'Build week Unit 1. Marketing page for the Save the Animals initiative\"",
   "main": "index.html",
   "scripts": {
-    "test": "."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": "https://github.com/Save-The-Animals-Lambda-School/Marketing/tree/amber-chunn",
   "author": "Amber Chunn <a.77@me.com>",
+=======
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Save-The-Animals-Lambda-School/Marketing.git"
+  },
+  "author": "",
+>>>>>>> b6e7d1608d176761a3cff5664918a763473603ec
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Save-The-Animals-Lambda-School/Marketing/issues"
+  },
+  "homepage": "https://github.com/Save-The-Animals-Lambda-School/Marketing#readme",
   "dependencies": {
-    "axios": "^0.19.2",
     "less": "^3.10.3",
     "less-watch-compiler": "^1.14.6",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
-    "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^5.0.0",
-    "yarn": "^1.21.1",
-    "yup": "^0.28.1"
+    "yarn": "^1.22.0"
   }
 }
