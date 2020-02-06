@@ -1,16 +1,13 @@
 {
-  "name": "marketing",
+  "name": "save-the-animals",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "'Build week Unit 1. Marketing page for the Save the Animals initiative\"",
+  "main": "index.html",
   "scripts": {
     "test": "."
   },
-  "repository": {
-    "type": "git",
-    "url": "."
-  },
-  "author": "",
+  "repository": "https://github.com/Save-The-Animals-Lambda-School/Marketing/tree/amber-chunn",
+  "author": "Amber Chunn <a.77@me.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
