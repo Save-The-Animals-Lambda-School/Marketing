@@ -361,17 +361,19 @@ nav .buttons-container a {
 }
 header {
   display: flex;
-  padding: 40px 20px 20px 40px;
+  padding: 40px 20px 20px 30px;
 }
 @media (max-width: 500px) {
   header {
     flex-direction: column;
+    padding: 40px 20px 20px 20px;
+    align-items: center;
   }
 }
 header .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../image/puppy.jpg");
   height: 50vh;
-  width: 45vw;
+  width: 40vw;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
