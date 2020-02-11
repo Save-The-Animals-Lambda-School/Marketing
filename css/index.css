@@ -460,6 +460,7 @@ header .news-container h4 {
   letter-spacing: 3px;
   padding: 4% 0;
   color: #ff4500;
+  text-align: center;
 }
 @media (max-width: 500px) {
   header .news-container h4 {
